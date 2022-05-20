@@ -572,7 +572,7 @@ func (dt *DbfTable) SaveFile(filename string) error {
 	return errors.New("godbf.DbfTable.SaveFile() is deprecated; Use godbf.SaveToFile() instead")
 }
 
-// RawData return the dbf table data as a byte array
-func (dt *DbfTable) RawData() []byte {
+// Bytes return the dbf table data as a byte array
+func (dt *DbfTable) Bytes() []byte {
 	return dt.dataStore
 }
